@@ -1,0 +1,99 @@
+.contentArea {
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	padding-top: 26px;
+	height: 881px;
+	.videoName {
+		font-size: 16px;
+		color: #1a1a1a;
+		margin-bottom: 0px;
+	}
+	.videoDesc {
+		font-size: 14px;
+		color: #4d4d4d;
+	}
+	.videoPanel {
+		position: relative;
+		margin-top: 20px;
+		.leftPanel {
+      position: absolute;
+      color: #fff;
+      z-index: 999;
+      top: 20px;
+      left: 880px;
+      > div {
+        cursor: pointer;
+        width: 100px;
+        height: 22px;
+        font-size: 14px;
+        color: #cbcbcb;
+        background: #2f2f2f;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img {
+          width: 16px;
+          height: 16px;
+        }
+        .text {
+          text-align: center;
+          line-height: 1;
+        }
+      }
+      .exciseBtn {
+        margin-top: 150px;
+      }
+    }
+		.recordPanel {
+			background-color: #000;
+			float: left;
+			max-height: 720px;
+			overflow-y: auto;
+			padding: 0 20px;
+			width: 370px;
+			height: 570px;
+			margin-left: 20px;
+			.tabs {
+				color: #c0c0c0;
+				:global {
+					.ant-tabs-bar {
+						border-bottom: 1px solid #161512;
+					}
+					.ant-tabs-tab {
+						width: 153px;
+						text-align: center;
+					}
+					.ant-tabs-tab-active {
+						color: #3bb8ff;
+					}
+					.ant-tabs-ink-bar {
+						background-color: #3bb8ff;
+					}
+				}
+			}
+			.recordListItem {
+		    width: 330px;
+		    cursor: pointer;
+		    color: #e9e9e9;
+		    margin: 0 auto;
+		    height: 60px;
+		    line-height: 60px;
+		    border-bottom: 1px solid #2f2f2f;
+		    &.cur {
+		    	color: #43a7ff;
+		    }
+			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	.changeBtn {
+		margin-top: 388px;
+		text-align: center;
+	}
+}

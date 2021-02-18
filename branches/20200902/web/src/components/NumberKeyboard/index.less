@@ -1,0 +1,46 @@
+.root{
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 10px #e6e6e6;
+    .title{
+        font-size: 16px;
+        font-weight: 600;
+        color: #666;
+        text-align: center;
+        height: 43px;
+        line-height: 43px;
+        background-color: #fff;
+        border-bottom: 1px solid #e6e6e6;
+    }   
+    .operationArea{
+        padding: 8px;
+        .keyboard{
+            li{
+                width: 33px;
+                height: 33px;
+                border: 1px solid #e6e6e6;
+                text-align: center;
+                line-height: 31px;                
+                float: left;
+                margin-right: 9px;
+                margin-bottom: 9px;
+                font-size: 14px;
+                color: #666;
+                cursor: pointer;
+                &:nth-child(5n+0){
+                    margin-right: 0;
+                }
+            }
+            .liActive{
+                border: 1px solid #53b270;
+                color: #53b270;
+            }
+        }
+        .btn{
+            border: 1px solid #53b270;
+            color: #53b270;
+            &:hover{
+                background-color: #fafafa;
+            }
+        }
+    }     
+}

@@ -1,0 +1,457 @@
+.contentArea {
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  padding-top: 26px;
+  height: 835px;
+  .contentTop {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 0px;
+    .teacher{
+      padding-left: 50px;
+    }
+  }
+  .videoPanel {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    .leftButtomPanel {
+      position: absolute;
+      color: #fff;
+      z-index: 999;
+      top: 290px;
+      left: 400px;
+      > div {
+        cursor: pointer;
+        font-size: 14px;
+        color: #cbcbcb;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+    .leftTopPanel {
+      position: absolute;
+      color: #fff;
+      z-index: 999;
+      top: 15px;
+      left: 15px;
+      > div {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        color: #cbcbcb;
+        background: #2f2f2f;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .exciseBtn {
+        margin-top: 30px;
+        margin-right: 30px;
+      }
+    }
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
+.card{
+  width: 200px;
+}
+.fileInput {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: relative;
+    top: -0.09em;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+  .triggerDesc {
+    display: flex;
+    .triggerName {
+      color: #989b9b;
+      line-height: 1;
+      margin-left: 5px;
+    }
+  }
+}
+.emotionList {
+  margin: 0 auto;
+  height: 150px;
+  width: 400px;
+  overflow-y: auto;
+  img {
+    padding: 5px  5px;
+  }
+}
+.fileInput input {
+  position: absolute;
+  //right: 0px;
+  width: 80px;
+  top: 0px;
+  //left: -100px;
+  opacity: 0;
+}
+
+.submitBtn {
+  float: right;
+}
+
+.video_leftPanel {
+  // float: left;
+	width: 469px;
+	height: 700px;
+  background-color: #c6cdd1;
+  .top{
+    width: 449px;
+    height: 252px;
+    background-color: #ffffff;
+    margin: 10px;
+  }
+  .bottom{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 449px;
+    height: 418px;
+    background-color: #ffffff;
+    margin: 10px;
+    margin-top: 0px;
+  }
+  .emptyContent{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 449px;
+    height: 418px;
+    background-color: #ffffff;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.video_center {
+  background-color: #f1f2f6;
+  margin-bottom: 10px;
+  width:-webkit-calc(100vw- 1050px); 
+  width:-moz-calc(100vw - 1050px); 
+  width:calc(100vw - 1050px); 
+  height: 700px;
+  .tabs {
+    color: #c0c0c0;
+    :global {
+      .ant-tabs-tab {
+        width: 153px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ant-tabs-nav-scroll {
+        background-color: #e7ebee;
+      }
+      .ant-tabs-tab-active {
+        color: #3bb8ff;
+      }
+      .ant-tabs-ink-bar {
+        background-color: #3bb8ff;
+      }
+    }
+  }
+  .detaiWrap {
+    position: relative;
+    height: 422px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .anMoveLeft {
+      // left: 0;
+      // animation: moveLeft .7s ease;
+      // -webkit-animation:moveLeft .7s ease; 
+      //padding-top: 20px;
+      width: 100%;
+      clear: both;
+      .mess{        
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+      }
+    }
+    .anMoveRight {
+        padding-top: 20px;
+        // left: 0;
+        // animation: moveRight .7s ease;
+        // -webkit-animation:moveRight .7s ease; 
+        width: 100%;
+        clear: both;
+        .messageItemWrap{
+          display: block;
+        }
+        .name {
+          text-align: right;
+        }
+        .item{
+          float: right;
+          margin-right: 20px;        
+        }
+        .mess {
+          float: right;
+          text-align: left;
+          background-color: #73d13d;
+          border: 1px solid #52c41a;
+        }
+        .avator {
+          float: right;
+          width: 30px;
+          height: 30px;
+        }  
+    }
+    .messageItemWrap {
+      position: relative;
+      display: flex;
+      margin-bottom: 10px;
+      .avator{        
+        width: 65px; 
+        height: 65px; 
+        margin-top: 12px;
+      }
+      .avator img {
+        border-radius: 50%; 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        object-position: center;
+      }
+      .item {
+        margin-left: 20px;
+        max-width: 350px;
+        .name {
+          color: #3bb8ff;
+        }
+        .mess {
+          position: relative;
+          padding: 10px;
+          border-radius: 5px;
+          color: #2f2f2f;
+          margin-top: 5px;
+          font-size: 14px;
+          display: inline-block;          
+          .triangle {
+            position: absolute;
+            left: -5px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-right: 5px solid #4a7ef4;
+            border-bottom: 5px solid transparent;
+          }
+          .normal {
+            word-break: break-all;
+          }
+          .image {
+            height: 90px;
+            width: 120px;
+          }
+          .affix {
+            &:after {
+              display: table;
+              content: '';
+              clear: both;
+            }
+            .affixImg {
+              float: left;
+              width: 48px;
+              height: 48px;
+            }
+            .desc {
+              float: left;
+              margin-left: 30px;
+              display: flex;
+              justify-content: center;
+              height: 48px;
+              flex-direction: column;
+              margin-right: 30px;
+              .filename {
+                max-width: 130px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: keep-all;
+                a {
+                  color: rgb(0, 81, 255);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .inputWrap {
+    .messInput {
+      height: 150px;
+      margin-top: 0px;
+      background: #fff;
+      border: none;
+      resize: none;
+      color: #2f2f2f;
+      padding: 10px;
+      border-bottom: 1px solid #4d4d4d;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .submitBtn {
+      float: right;
+      color: #fff;
+      width: 80px;
+      border-radius: 2px;
+      border-color: #4a7ef4;
+    }
+  }
+}
+/* 定义keyframe动画，命名为blink */
+@keyframes blink{
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* 添加兼容性前缀 */
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-o-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* 定义blink类*/
+.blink{
+  animation: blink 0.4s linear infinite;  
+  /* 其它浏览器兼容性前缀 */
+  -webkit-animation: blink 0.4s linear infinite;
+  -moz-animation: blink 0.4s linear infinite;
+  -ms-animation: blink 0.4s linear infinite;
+  -o-animation: blink 0.4s linear infinite;
+}
+.video_right {
+  width: 300px;
+  height: 700px;
+  background-color: #fafafa;
+  :global {
+    .ant-collapse > .ant-collapse-item{
+      border-bottom: 0px;
+      .ant-collapse-content{
+        background-color: #fafafa;
+      }
+    }
+  }
+  .tabs {
+    color: #fafafa;
+    :global {
+      .ant-tabs-bar {
+        margin-bottom: 0px;
+      }
+      .ant-tabs-tab {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ant-tabs-nav-scroll {
+        width: 100%;
+        text-align: center;
+        background-color: #c6cdd1;
+      }
+      .ant-tabs-tab-active {
+        color: #3bb8ff;
+      }
+      .ant-tabs-ink-bar {
+        background-color: #3bb8ff;
+      }
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .img {
+      border-radius: 50%; 
+        width: 3vmin; 
+        height: 3vmin; 
+        object-fit: cover; 
+        object-position: center;
+    }
+    .blackUser {
+      color: red;
+      margin-left: 10px;
+      &.off {
+        color: rgb(165, 162, 162);
+      }
+    }
+    .noTokingUser {
+      color: rgb(255, 174, 0);
+      margin-left: 10px;
+      &.off {
+        color: rgb(165, 162, 162);
+      }
+    }
+    .name {
+      color: #4a7ef4;
+      margin-left: 10px;
+      &.off {
+        color: rgb(165, 162, 162);
+      }
+    }
+  }
+}
+
+
+.newBlockLine {
+  width: 700px;
+  height: 1px;
+  background-color:#c0c0c0;
+}
+
+.newAffixUploadWrap {
+  height: 55px;
+  padding: 10px 20px 20px;
+  line-height: 33px;
+  background-color: #fff;
+}

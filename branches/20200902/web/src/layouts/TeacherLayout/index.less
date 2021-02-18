@@ -1,0 +1,133 @@
+:global(#root) {
+  display: flex;
+}
+
+.leftSider {
+  position: absolute;
+}
+
+.leftImage {
+  display: block;
+  margin: 15px auto;
+}
+
+.footerWrap {
+  margin-left: 22px;
+  margin-top: 100px;
+  margin-bottom: 96px;
+  .user {
+    position: relative;
+    margin: 0 25px 20px 0;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 8px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+    .badge {
+      top: 9px;
+      margin-right: 24px;
+      cursor: pointer;
+      :global {
+        .ant-badge-count {
+          top: -4px;
+          right: -1px;
+          height: 16px;
+          line-height: 15px;
+        }
+        .ant-badge-multiple-words {
+          padding: 0 5px;
+        }
+      }
+    }
+    .userName {
+      font-size: 24px;
+      margin-left: 5px;
+    }
+  }
+  .cloudPlatform {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 82px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #fbc841;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+  }
+  .feedbackInfo {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    .desc {
+      font-size: 16px;
+    }
+  }
+}
+
+.breadcrumb {
+  padding: 0 20px;
+  background-color: #fff !important;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadada;
+  :global {
+    .ant-breadcrumb {
+      flex: 1;
+      margin-top: 20px;
+    }
+  }
+  .name {
+    color: #1a1a1a;
+    font-size: 36px;
+    margin-top: 5px;
+  }
+  .back {
+    .backDesc {
+      cursor: pointer;
+      width: 95px;
+      height: 36px;
+      background-color: #f3f4fa;
+      color: #4d4d4d;
+      font-size: 18px;
+      border-radius: 18px;
+      padding: 5px 15px;
+      line-height: 160px;
+    }
+  }
+}
+
+.content {
+  margin: 20px;
+  margin-top: 16px;
+  min-height: initial;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  :global {
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      padding-left: 7px;
+    }
+    .ant-menu-item.ant-menu-item-selected::after {
+      border-right: 3px solid #fbc841;
+      left: 0;
+      right: initial;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+package com.ry.sskt.controller.action;
+
+import com.ry.sskt.model.common.request.*;
+import com.ry.sskt.model.common.response.ResponseBase;
+import com.ry.sskt.model.discuss.request.MessageApiRequest;
+import com.ry.sskt.model.discuss.request.SendFileApiRequest;
+import com.ry.sskt.model.discuss.request.SendMessageApiRequest;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+
+/**
+ * <p>
+ * 消息 服务类
+ * </p>
+ *
+ * @author xrq
+ * @since 2020-04-26
+ */
+public interface IDiscussActionService {
+    ResponseBase SendMessage(SendMessageApiRequest request);
+
+    ResponseBase SendFile(SendFileApiRequest request) throws Exception;
+
+    ResponseBase Message(MessageApiRequest request);
+}

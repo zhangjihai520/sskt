@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-sskt
+  cloud:
+    # 配置中心
+    nacos:
+      config:
+        server-addr: alibaba.nacos.com:8848
+        file-extension: yml
+        encode: UTF-8
+        prefix: ${spring.application.name}
+        shared-dataids: ${spring.application.name}.yml,common.yml
+      discovery:
+          server-addr: alibaba.nacos.com:8848
+log:
+  path: D:/log/${spring.application.name}
+  level: debug
+server:
+  max-http-header-size: 10000000

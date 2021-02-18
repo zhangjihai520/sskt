@@ -1,0 +1,91 @@
+.search_filter {
+  width: 1180px;
+  .keywordPanel {
+    display: flex;
+    .keyword {
+      height: 60px;
+      padding: 20px;
+      font-size: 20px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .btn {
+      height: 60px;
+      width: 200px;
+      color: #fff;
+      font-size: 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .tagWrap {
+    margin-top: 30px;
+    background: #fff;
+    .tag_lst {
+      padding: 15px 24px 15px 20px;
+      background: #fff;
+      .strongLal {
+        display: inline-block;
+        width: 72px;
+        text-align: right;
+        color: #808080;
+        padding-top: 5px;
+      }
+      .checkedBox {
+        display: inline-block;
+        width: 800px;
+        vertical-align: top;
+      }
+      :global {
+        .ant-tag {
+          margin-bottom: 5px;
+          border-radius: 16px;
+          padding: 5px 20px;
+          height: inherit;
+        }
+      }
+    }
+  }
+  .resultPanel {
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 12px;
+    .resultList {
+      min-height: 562px;
+      overflow-y: auto;
+      .listbox {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 10px;
+      background: #ffffff;
+      padding: 0 20px 10px;
+    }
+    .ant-pagination {
+      margin: 10px 0 0px 0;
+    }
+    .ant-pagination {
+      margin-bottom: 0 !important ;
+    }
+  }
+}
+
+.downloadPannel {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.nullPage {
+  text-align: center;
+  line-height: 400px;
+  background: #fff;
+}

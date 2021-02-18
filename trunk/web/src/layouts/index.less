@@ -1,0 +1,29 @@
+@bgred:#3547ab;
+@fontred:#fff;
+
+.online{
+  :global{
+    .ant-layout-header{
+      background-color: @bgred
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+      background-color: @bgred;
+    }
+    .ant-layout-sider{
+      background-color: @bgred;
+    }
+    .ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+      background-color: @bgred;
+    }
+    .ant-menu.ant-menu-dark .ant-menu-item-selected{
+      color:@fontred;
+      background-color: #495fd6;
+    }
+    .ant-menu-dark .ant-menu-item-selected .anticon{
+        color:@fontred;
+    }
+    .ant-menu-dark .ant-menu-item-selected .anticon+span {
+        color:@fontred;
+    }
+  }
+}

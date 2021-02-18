@@ -1,0 +1,156 @@
+.wrap {
+  width: 100%;
+  left: 0;
+  background-color: #f0f2f5;
+  .banner {
+    height: 100%;
+    width: 100%;
+  }
+  .content {
+    position: relative;
+    // width: 1180px;
+    width:100%;
+    margin: 0 auto;
+    .motkImg {
+      position: absolute;
+      right: -155px;
+      top: 225px;
+    }
+    .queryContent {
+      margin-top: 26px;
+      background-color: #fff;
+      padding-left: 60px;
+      :global {
+        .ant-tag {
+          border-radius: 10px;
+          height: initial;
+        }
+      }
+      .strongLal {
+        font-size: 14px;
+        color: #808080;
+        margin-right: 20px;
+      }
+      .gradeQueryContent {
+        display: flex;
+        height: 60px;
+        align-items: center;
+      }
+      .dateQueryContent {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: start;
+        .switchIcon {
+          display: block;
+          width: 26px;
+          height: 26px;
+          font-size: 26px;
+          cursor: pointer;
+        }
+        .scrollContent {
+          overflow: hidden;
+            width: 800px;
+          .dateQueryScrollWrap {
+            display: flex;
+            transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+              -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            .queryDate {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .resultContent {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      .title {
+        padding: 20px;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+      }
+      .lessonContent {
+        padding: 0 30px 10px 50px;
+        .lessonItem {
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding: 12px;
+          margin-bottom: 20px;
+          background-color: #f4f4f4;
+          .imageIcon {
+            margin-right: 20px;
+          }
+          .courseName {
+            margin-right: 20px;
+            font-size: 18px;
+            color: #999;
+          }
+          .lessonName {
+            flex: 1;
+            font-size: 18px;
+            color: #999;
+          }
+          .btn {
+            width: 96px;
+            height: 46px;
+            border-radius: 23px;
+            background-color: #f4f4f4;
+            border-color: #4173f2;
+            color: #4173f2;
+          }
+          .question {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 20px;
+          }
+          &.cur {
+            background-color: #fff1f1;
+            .courseName {
+              color: #ff5f55;
+            }
+            .lessonName {
+              color: #ff5f55;
+            }
+            .btn {
+              color: #f25241;
+              background-color: #fff1f1;
+              border-color: #fb5774;
+              color: #fb5774;
+            }
+          }
+          &.review {
+            .courseName {
+              color: #333;
+            }
+            .lessonName {
+              color: #333;
+            }
+          }
+          &.init {
+            .courseName {
+              color: #333;
+            }
+            .lessonName {
+              color: #333;
+            }
+            .btn {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+    .nullContent {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: #fff;
+    }
+  }
+}

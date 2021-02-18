@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env UMIS_ENV=dev umi dev",
+    "test": "cross-env UMIS_ENV=test umi build",
+    "build": "cross-env UMIS_ENV=prod umi build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "bizcharts": "^3.4.4",
+    "classnames": "^2.2.6",
+    "copy-to-clipboard": "^3.3.1",
+    "cross-env": "^5.2.0",
+    "echarts": "^4.1.0",
+    "echarts-for-react": "2.0.8",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "path-to-regexp": "^3.0.0",
+    "react-document-title": "^2.0.3",
+    "react-router-breadcrumbs-hoc": "^3.1.0",
+    "react-zmage": "^0.8.5-beta.36",
+    "umi": "^2.6.10",
+    "umi-plugin-react": "^1.7.0",
+    "umi-request": "^1.0.3",
+    "xgplayer": "^2.9.3",
+    "xgplayer-flv.js": "^2.1.2",
+    "xgplayer-hls.js": "^2.2.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "del": "^4.0.0",
+    "eslint": "^4.14.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-shell": "^0.7.0",
+    "gulp-ssh": "^0.7.0",
+    "gulp-zip": "^4.2.0",
+    "husky": "^0.12.0",
+    "redux-logger": "^3.0.6"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

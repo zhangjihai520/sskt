@@ -1,0 +1,142 @@
+.Infoset {
+  padding: 30px;
+  background: #fff;
+  .avatar {
+    width: 80px;
+    height: 51px;
+    border-radius: 0%;
+  }
+  .subContent {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    color: #1a1a1a;
+    .setStyle {
+      display: inline-block;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+  }
+  .replying {
+    &:hover {
+      color: #fff;
+      background-color: #147ef6;
+      border-color: #147ef6;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    }
+  }
+  li {
+    cursor: default;
+    .replied {
+      color: #808080;
+      font-size: 14px;
+      cursor: default;
+      margin-right: 10px;
+    }
+  }
+
+  .paginationStyle {
+    margin-top: 10px;
+    text-align: right;
+    :global {
+      .ant-pagination-total-text {
+        float: left;
+      }
+    };
+  }
+
+  :global {
+    .ant-list-item-meta {
+      align-items: center;
+      .ant-list-item-meta-title {
+        display: inline;
+      }
+    }
+
+    .ant-list-item-meta-description {
+      display: inline-block;
+    }
+    .ant-list-item-action {
+      //容器设置弹性布局
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.dataContent {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    height: 330px;
+    width: 280px;
+    border: 1px solid #dadada;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    :global {
+      .ant-btn-primary[disabled] {
+        background-color: #e1e1e1;
+        border: transparent;
+      }
+    };
+    .time {
+      font-size: 14px;
+      color: #999;
+    }
+    .status {
+      font-size: 18px;
+      margin-top: 5px;
+      &.red {
+        color: #f13a3a;
+      }
+      &.green {
+        color: #12d391;
+      }
+    }
+    .content {
+      text-align: center;
+      width: 100%;
+      .descImage {
+        width: 138px;
+        height: 80px;
+        margin-top: 20px;
+      }
+      .descName {
+        font-size: 24px;
+        color: #1a1a1a;
+        margin-top: 10px;
+      }
+      .classInfo {
+        font-size: 14px;
+        color: #4d4d4d;
+        margin-top: 5px;
+        .teacherName {
+          margin-left: 20px;
+        }
+      }
+      .btn {
+        width: 185px;
+        height: 38px;
+        font-size: 22px;
+        color: #fff;
+        border-radius: 19px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+/*评星设置*/
+.rateClass {
+  margin-bottom: 10px;
+}
+.rateText {
+  font-size: 14px;
+  color: #4d4d4d;
+}

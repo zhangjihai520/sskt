@@ -1,0 +1,49 @@
+.SmallLessonEdit{
+  padding: 24px 20px;
+  background: #fff;
+  .title{
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+  }
+  .formbox{
+    max-width: 600px;
+  }
+  .margintop{
+    margin-top: 20px;
+  }
+  .butbox{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .red{
+    color: red;
+  }
+  :global{
+    .ant-col-sm-8 {
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 90px;
+    }
+    .ant-col-sm-16 {
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // width: 66.66666667%;
+        width:calc(~'100% - 90px');
+        float: left;
+    }
+    .ant-col-12{
+      width: 50%;
+    }
+    .ant-upload-list-item-actions a{
+      display: none;
+    }
+    .ant-upload-list-picture-card .ant-upload-list-item{
+      width: 240px;
+      height: 140px;;
+    }
+  }
+}

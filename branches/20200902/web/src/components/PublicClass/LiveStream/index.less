@@ -1,0 +1,247 @@
+.contentArea {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	.videoArea {
+		position: relative;
+		width: 746px;
+		height: 464px;
+		.videoEl {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			&.live::-webkit-media-controls {
+				display: none !important;
+			}
+		}
+		.controlPanel {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			height: 35px;
+			background: #26282b;
+			color: #d4d4d4;
+			align-items: center;
+			font-size: 20px;
+			justify-content: flex-end;
+			padding-right: 20px;
+			z-index: 2147483648;
+
+			.sliderPanel {
+				width: 110px;
+				margin-top: -3px;
+				margin-right: 20px;
+			}
+			.clickAble {
+				cursor: pointer;
+			}
+		}
+	}
+	.operationArea {
+		position: relative;
+		width: 420px;
+		margin-left: 10px;
+		padding: 0 10px;
+		background: #fff;
+		.motkImg {
+      position: absolute;
+	    right: -155px;
+	    top: 155px;
+    }
+		.scrollArea {
+			max-height: 396px;
+			overflow: auto;
+		}
+		.tabs {
+			color: #333;
+			:global {
+				.ant-tabs-tab {
+					width: 184px;
+					text-align: center;
+					font-size: 20px;
+				}
+				.ant-tabs-tab-active {
+					color: #4a7ef4;
+				}
+				.ant-tabs-ink-bar {
+					background-color: #4a7ef4;
+				}
+			}
+			.lessonArea {
+				margin-top: 10px;
+				.title {
+					font-size: 16px;
+					color: #000;
+				}
+				.lessonItem {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					height: 62px;
+					margin-top: 10px;
+					background-color: #f4f4f4;
+					padding-left: 15px;
+					font-size: 16px;
+					color: #999;
+					.courseName {
+						text-align: center;
+						width: 100px;
+					}
+					.name {
+						width: 135px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+					.btn {
+						margin-right: 55px;
+						color: #4173f2;
+						cursor: not-allowed;
+						width: 64px;
+					}
+					.lineAngle {
+						display: none;
+						position: absolute;
+						left: 0;
+						width: 4px;
+						height: 100%;
+						background-color: #4a7ef4;
+					}
+					&.cur {
+						background-color: #fff1f1;
+						.courseName {
+							color: #ff5f55;
+						}
+						.name {
+							color: #ff5f55;
+						}
+						.btn {
+							color: #f25241;
+							cursor: pointer;
+						}
+					}
+					&.review {
+						.courseName {
+							color: #333;
+						}
+						.name {
+							color: #333;
+						}
+						.btn {
+							cursor: pointer;
+						}
+					}
+					&.active {
+						.lineAngle {
+							display: block;
+						}
+					}
+					&.init {
+						.courseName {
+							color: #333;
+						}
+						.name {
+							color: #333;
+						}
+						.btn {
+							color: #333;
+						}
+					}
+				}
+			}
+
+			.messageWrap {
+				height: 252px;
+				overflow-y: auto;
+				margin-bottom: 10px;
+				.messageItemWrap {
+					position: relative;
+					display: flex;
+					margin-bottom: 10px;
+					.item {
+						margin-left: 20px;
+						max-width: 320px;
+						.mess {
+							position: relative;
+							background-color: #4a7ef4;
+							padding: 10px;
+							border-radius: 5px;
+							color: #fff;
+							margin-top: 5px;
+							font-size: 14px;
+							.triangle {
+								position: absolute;
+								left: -5px;
+								top: 10px;
+								width: 0;
+								height: 0;
+								border-top: 5px solid transparent;
+								border-right: 5px solid #4a7ef4;
+								border-bottom: 5px solid transparent;
+							}
+							.normal {
+								word-break: break-all;
+							}
+							.image {
+								height: 90px;
+								width: 120px;
+							}
+							.affix {
+								&:after {
+									display: table;
+									content: '';
+									clear: both;
+								}
+								.affixImg {
+									float: left;
+								}
+								.desc {
+									float: left;
+									margin-left: 30px;
+									display: flex;
+									justify-content: center;
+									height: 48px;
+									flex-direction: column;
+									margin-right: 30px;
+									.filename {
+										max-width: 130px;
+										overflow: hidden;
+										text-overflow: ellipsis;
+										word-break: keep-all;
+										a {
+											color: #fff;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.inputWrap {
+				border-top: 1px solid #f1f1f1;
+				.messInput {
+					resize: none;
+					height: 80px;
+					border: none;
+					margin-bottom: 10px;
+					&:focus {
+						box-shadow: none;
+					}
+				}
+				.submitBtn {
+					float: right;
+					color: #4a7ef4;
+					width: 80px;
+					border-radius: 2px;
+					border-color: #4a7ef4;
+				}
+			}
+		}
+	}
+}

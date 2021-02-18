@@ -1,0 +1,53 @@
+.bg {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  .bgImg {
+    background: url(/images/home/img_home_teacher_background_online.jpg) no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bgContent {
+    background: url(/images/home/bg_content.png) no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    height: 122px;
+    background-position: center;
+  }
+}
+.CourseManager {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: calc(~'100% - 121px');
+  // overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #f0f2f5;
+  .bannerbox {
+    width: 100%;
+    margin: auto;
+    padding: 80px 0 132px;
+    text-align: center;
+    background-image: url('assets/common/img_student_bj.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .menu {
+    width: 1180px;
+    margin: -30px auto 0;
+    background: initial;
+    :global {
+      .ant-menu-vertical .ant-menu-item::after,
+      .ant-menu-vertical-left .ant-menu-item::after,
+      .ant-menu-vertical-right .ant-menu-item::after,
+      .ant-menu-inline .ant-menu-item::after {
+        left: 0;
+        right: initial;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.messageBox{
+    margin: 0 auto;
+    max-width: 1200px;
+
+    :global {
+        .ant-menu-vertical .ant-menu-item::after,
+        .ant-menu-vertical-left .ant-menu-item::after,
+        .ant-menu-vertical-right .ant-menu-item::after,
+        .ant-menu-inline .ant-menu-item::after{
+            left: 0;
+            right: inherit;
+        }
+        .ant-pagination  {
+            margin: 20px 0;
+        }
+        .ant-layout-sider {
+            background: #fff;
+        }
+        .ant-layout-content {
+            position: relative;
+            padding: 0 24px;
+            margin-left: 10px;
+            background: #fff;
+        }
+        .ant-list-bordered {
+            border: 0
+        }
+        .ant-list-item {
+            border-bottom: 1px dashed #e5e5e5;
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 160px;
+
+            &:last-child{
+                border-bottom: 1px dashed #e5e5e5
+            }
+        }
+
+        .ant-list-item-no-flex {
+            display: block;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            color: #4d4d4d;
+        }
+        .ant-list-header {
+            padding-right: 0;
+            color: #1a1a1a;
+            border-bottom-color: #e5e5e5;
+        }
+        .ant-list-header,
+        .ant-list-item {
+            padding-left: 0;
+        }
+        .ant-list-item-no-flex {
+            justify-content: space-between;
+
+            .anticon {
+                padding-left: 10px;
+            }
+        }
+        .ant-list-item {
+            position: relative;
+        }
+        .ant-list-item-action {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            text-align: right;
+            width: 100%;
+            box-sizing: border-box;
+            margin-left: 0;
+
+            .anticon {
+                margin-left: 10px;
+            }
+        }
+
+        .ant-spin {
+           width: 100%;
+           position: absolute;
+           top: 100px;
+           left: 0;
+        }
+        .ant-list-empty-text{
+            opacity: .5;
+        }
+        .list {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .ant-list-item-action > li{
+            width:100%;
+            height: 100%;
+        }
+        .ant-pagination .ant-pagination-prev a,
+        .ant-pagination .ant-pagination-next a{
+            line-height: 32px;
+        }
+
+    }
+
+    .time {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        line-height: 40px;
+    }
+}

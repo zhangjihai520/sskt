@@ -1,0 +1,133 @@
+.bg {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  .bgImg {
+    background: url(/images/home/img_home_teacher_background_online.jpg) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bgContent {
+    background: url(/images/home/bg_content.png) no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    height: 122px;
+    background-position: center;
+  }
+}
+
+.root {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftBox {
+  width: 180px;
+  margin: 0;
+  background-color: #fff;
+  .menuItem {
+    height: 40px;
+    padding: 0 40px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  .menuActive {
+    color: @primary-color;
+    border-left: 3px solid @primary-color;
+    background-color: #f7f9fa;
+  }
+}
+
+.rightBox {
+  width: 988px;
+  background-color: #fff;
+  padding: 0 24px;
+  margin: 0 auto;
+  .container {
+    .listWrap {
+      border-bottom: 1px solid #e6e6e6;
+      .listItem {
+        padding: 24px 0;
+        display: flex;
+        flex-direction: row;
+        .cover {
+          width: 220px;
+          height: 140px;
+          overflow: hidden;
+          border-radius: 5px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info {
+          flex: 1;
+          margin: 0 18px;
+          padding: 5px 0 0;
+          height: 140px;
+          h5 {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+          }
+          p {
+            margin-bottom: 3px;
+            font-size: 12px;
+            color: #666;
+          }
+          .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+            span {
+              display: inline-block;
+            }
+            div {
+              flex: 1;
+            }
+          }
+        }
+        .operation {
+          align-self: flex-end;
+        }
+      }
+      .commentWrap {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        padding-left: 25px;
+        background-color: #f7f8f9;
+        margin-bottom: 20px;
+        .avator {
+          width: 46px;
+          height: 46px;
+        }
+        .rightDescWrap {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .pagingBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    line-height: 32px;
+  }
+}
+
+.noData {
+  padding: 25px 0;
+}

@@ -1,0 +1,80 @@
+.contentArea {
+	.videoName {
+		font-size: 16px;
+		color: #1a1a1a;
+		margin-top: 24px;
+		margin-bottom: 0px;
+	}
+	.videoDesc {
+		font-size: 14px;
+		color: #4d4d4d;
+	}
+	.line {
+		margin-top: 10px;
+		margin-bottom: 40px;
+		height: 1px;
+		background-color: #ccc;
+	}
+	.contentWrap {
+		.recordPanel {
+			background-color: #000;
+			float: left;
+			overflow-y: auto;
+			padding: 0 16px;
+			width: 370px;
+			margin-left: 10px;
+			height: 570px;
+			.tabs {
+				color: #c0c0c0;
+				:global {
+					.ant-tabs-tab {
+						width: 153px;
+						text-align: center;
+					}
+					.ant-tabs-tab-active {
+						color: #3bb8ff;
+					}
+					.ant-tabs-ink-bar {
+						background-color: #3bb8ff;
+					}
+				}
+			}
+			.detaiWrap {
+				background-color: #161515;
+				height: 480px;
+				padding: 20px 0;
+				padding-top: 0;
+				overflow-y: auto;
+				.item {
+					display: flex;
+					align-items: center;
+					padding-top: 20px;
+					.img {
+						margin-left: 28px;
+					}
+					.desc {
+						margin-left: 10px;
+						.name {
+							color: #3bb8ff;
+							margin-bottom: 5px;
+						}
+						.videoname {
+							margin-left: 20px;
+							color: #c0c0c0;
+						}
+					}
+				}
+				.itemWithLine {
+					border-bottom: 1px solid #c0c0c0;
+					margin: 0 20px;
+					padding-bottom: 10px;
+					padding-top: 15px;
+					cursor: pointer;
+					.img {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

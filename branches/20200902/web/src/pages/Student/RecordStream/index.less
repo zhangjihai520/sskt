@@ -1,0 +1,38 @@
+.contentArea {
+	width: 1680px;
+	margin: 0 auto;
+	.videoName {
+		font-size: 16px;
+		color: #1a1a1a;
+		margin-top: 24px;
+		margin-bottom: 0px;
+	}
+	.videoDesc {
+		font-size: 14px;
+		color: #4d4d4d;
+	}
+	.videoPanel {
+		.recordPanel {
+			float: left;
+			max-height: 720px;
+			overflow-y: auto;
+			padding: 0 20px;
+			.recordListItem {
+				border-radius: 6px;
+	  		width: 350px;
+	    	text-align: center;
+	    	cursor: pointer;
+	    	background: #0ca0f5;
+	    	color: #fff;
+	    	margin-top: 20px;
+	    	&:first-child {
+					margin-top: 0px;
+				}
+			}
+		}
+	}
+	.changeBtn {
+		margin-top: 388px;
+		text-align: center;
+	}
+}

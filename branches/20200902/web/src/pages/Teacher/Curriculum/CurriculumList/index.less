@@ -1,0 +1,143 @@
+.lessonnum {
+  margin: 0;
+  display: flex;
+  .item {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 490px;
+    height: 150px;
+    padding: 0 15px;
+    padding-right: 25px;
+    margin-left: 56px;
+
+    &.blue {
+      background: url(/images/common/img_bg_blue.jpg) no-repeat;
+    }
+
+    &.red {
+      background: url(/images/common/img_bg_red.jpg) no-repeat;
+    }
+
+    &.green {
+      background: url(/images/common/img_bg_green.jpg) no-repeat;
+    }
+
+    &.first {
+      margin-left: 0;
+    }
+
+    .desc {
+      .descTitle {
+        font-size: 36px;
+      }
+
+      .descContent {
+        font-size: 24px;
+      }
+    }
+
+    .rightNum {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      font-size: 60px;
+      border: 2px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.content {
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 15px;
+  .tabheader {
+    padding: 20px 15px;
+    border-bottom: solid 1px #e5e5e5;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    .queryMargin {
+      margin-right: 14px;
+    }
+  }
+
+  .cityList {
+    margin: 12px;
+  }
+  .img {
+    width: 83px;
+  }
+  .name {
+    margin-left: 10px;
+  }
+  .stateItem {
+    border: 1px solid #ffae00;
+    border-radius: 11px;
+    color: #ffae00;
+    background-color: #fff4dc;
+    padding: 0 7px;
+    &.green {
+      background-color: #d8fff1;
+      color: #10d09c;
+      border-color: #10d09c;
+    }
+    &.red {
+      background-color: #ffd8d8;
+      color: #ff1c1c;
+      border-color: #ff1c1c;
+    }
+  }
+  .dataWrap {
+    padding: 0 20px;
+    :global {
+      .ant-table-thead > tr > th {
+        background-color: #fff;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.lessonnum div:last-child {
+  border-right: none;
+}
+
+.input {
+  width: 200px;
+  margin: 0 8px 0 0;
+  margin-left: 14px;
+}
+
+.pag {
+  margin-top: -15px;
+  height: 50px;
+  .total {
+    float: left;
+    line-height: 32px;
+  }
+
+  :global {
+    .ant-table-thead div {
+      text-align: center !important;
+    }
+  }
+}
+
+.up {
+  margin-top: 10px;
+}
+
+.mescontent {
+  :global {
+    .ant-modal-body {
+      max-height: 500px;
+      min-height: 100px;
+      overflow: auto;
+    }
+  }
+}

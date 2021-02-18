@@ -1,0 +1,44 @@
+.wrap {
+  position: fixed;
+  background: url(/images/common/stu_calendar_bg.jpg) no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 35px;
+  padding-bottom: 100px;
+  background-size: cover;
+  .root {
+    background-color: #fff;
+    width: 1180px;
+    margin: 0 auto 0;
+    :global {
+      .ant-radio-group {
+        display: none;
+      }
+      .ant-fullcalendar-content {
+        margin-right: -9px;
+        .events {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            text-overflow: ellipsis;
+            font-size: 12px;
+            margin-bottom: 2px;
+            .ant-tag {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.courseTitle {
+  margin: 0;
+  font-weight: 600;
+}

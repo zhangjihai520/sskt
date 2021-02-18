@@ -1,0 +1,314 @@
+
+/*
+* global重置样式
+*/
+html,
+body,
+:global(#root) {
+  min-height: 100%;
+  font-family: Microsoft YaHei,SimSun,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+em,
+i,
+strong {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul,
+li,
+dl{
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ 全局公用样式
+ */
+ :global {
+  //输入框里面清除图标的样式
+  .ant-input-suffix {
+    i.closeCircle {
+      line-height: 0;
+    }
+  }
+
+  /*定位*/
+  .tl {
+    text-align: left;
+  }
+  .tc {
+    text-align: center;
+  }
+  .tr {
+    text-align: right;
+  }
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+
+  .table-cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /*清除浮动*/
+  .f-clear {
+    zoom: 1;
+  }
+
+  .f-clear:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+  }
+
+  .vm {
+    vertical-align: middle;
+  }
+  .pr {
+    position: relative;
+  }
+  .pa {
+    position: absolute;
+  }
+  .abs-right {
+    position: absolute;
+    right: 0;
+  }
+  .zoom {
+    zoom: 1;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .none {
+    display: none!important;
+  }
+
+  /*边距，小5px，中10px，大15px，加大20px（s,m,l,xl）*/
+  .mt-s {
+    margin-top: 5px;
+  }
+  .mt-m {
+    margin-top: 10px;
+  }
+  .mt-l {
+    margin-top: 15px;
+  }
+  .mt-xl {
+    margin-top: 20px;
+  }
+  .mr-s {
+    margin-right: 5px;
+  }
+  .mr-m {
+    margin-right: 10px;
+  }
+  .mr-l {
+    margin-right: 15px;
+  }
+  .mr-xl {
+    margin-right: 20px;
+  }
+  .mb-m {
+    margin-bottom: 10px;
+  }
+  .mb-xl {
+    margin-bottom: 20px;
+  }
+  .ml-s {
+    margin-left: 5px;
+  }
+  .ml-m {
+    margin-left: 10px;
+  }
+  .ml-xl {
+    margin-left: 20px;
+  }
+  .mtb-m {
+    margin: 10px 0;
+  }
+  .mlr-m {
+    margin: 0 10px;
+  }
+
+  .mlr-xl {
+    margin: 0 20px;
+  }
+
+  .plr-xl{
+    padding: 0 20px;
+  }
+
+  /* 背景色 */
+  .bg-fff{
+    background-color: #fff;
+  }
+
+  /*字体颜色*/
+  .c-green {
+    color: #2cac61;
+  }
+
+  .c-yellow {
+    color: #fd931f;
+  }
+
+  .c-blue {
+    color: #0ca0f5;
+  }
+
+  .c-red {
+    color: #e60012;
+  }
+
+  .c-333 {
+    color: #333;
+  }
+
+  .c-666 {
+    color: #666;
+  }
+
+  .c-999 {
+    color: #999;
+  }
+
+  .c-ccc {
+    color: #ccc;
+  }
+
+  .c-fff {
+    color: #fff;
+  }
+
+  /*字体大小*/
+  .fs12 {
+    font-size: 12px;
+  }
+  .fs14 {
+    font-size: 14px;
+  }
+  .fs16 {
+    font-size: 16px;
+  }
+  .fs20 {
+    font-size: 20px;
+  }
+  .fs30 {
+    font-size: 30px;
+  }
+
+  /**省略号**/
+  .u-txt-dot {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    word-wrap: normal;
+  }
+
+  .u-fix-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background: #172a39;
+    :global {
+      .ant-btn {
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  /* 鼠标形状*/
+  .c-pointer {
+    cursor: pointer;
+  }
+
+  /*搜索文本框*/
+  .search-input {
+    input {
+      height: 40px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+  }
+
+  //文字提示气泡框
+  .ant-tooltip-inner {
+    font-size: 12px;
+  }
+
+  /*隐藏*/
+  .dn {
+    display: none;
+  }
+
+  .db {
+    display: block;
+  }
+
+  .di {
+    display: inline-block;
+  }
+
+  //无边框
+  .bn {
+    border: 0 !important;
+  }
+
+  //antd自带外层设置
+  .antd-box {
+    display: inline;
+  }
+
+  //致灰
+  .disable {
+    padding: 5px 10px;
+    color: #999;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    cursor: default;
+  }
+
+  //禁用
+  .disabled {
+    color: #999;
+    cursor: not-allowed;
+  }
+
+  .gd {
+    margin: 0 auto;
+    width: 1180px;
+  }
+  //灰色分割块
+  .u-dividerLine{
+    display: block;
+    height: 15px;
+    background-color: #f0f2f5;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
